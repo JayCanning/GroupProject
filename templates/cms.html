@@ -3,13 +3,20 @@
    <head>
       <title>Sensorium UX Lab - CMS</title>
 	  <script type="text/javascript" src = "static/scripts/script1.js"></script>
+	  <script type="text/javascript" src = "static/scripts/script2.js"></script>
+	  <script type="text/javascript" src = "static/scripts/script3.js"></script>
+	  <script type="text/javascript" src = "static/scripts/script4.js"></script>
    </head>
 <body>
 
 <div id="container">
   <h2>Click to save</h2>
   <button type="button" id="save" onclick="addFile()">Save Content</button>
+  <h2>Click to remove</h2>
+  <button type="button" id="remove" onclick="removeFile()">Remove Content</button>
 </div>
+
 <p><a href={{ url_for('index') }}>HOME</a></p>
+
 </body>
 </html>

@@ -1,8 +1,6 @@
-function addFile(){
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
+function removeFile(){
 
-	xhttp.open("POST", "admin");
-	xhttp.send();
-	}
+var xhr = new XMLHttpRequest();
+xhr.open('DELETE', 'admin');
+xhr.send();
 };
