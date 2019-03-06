@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sensorium UX Lab</title>
+   </head>
+
+	<body>
+	<a href={{ url_for('about') }}>About</a>
+	<a href={{ url_for('news') }}>News</a>
+	<a href={{ url_for('people') }}>People</a>
+	<a href={{ url_for('projects') }}>Projects</a>
+	<a href={{ url_for('collaboration') }}>Collaboration</a>
+	<a href={{ url_for('equipment') }}>Equipment</a>
+	<a href={{ url_for('contact') }}>Contact</a>
+	<a href={{ url_for('admin') }}>ADMIN CMS</a>
+	
+	{% block content %} 
+	{% endblock %}
+	</body>
+</html>
