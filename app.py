@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
+from butter_cms import ButterCMS
+client = ButterCMS('44810487d10339615131b21a39643604b13dc981')
 
 app = Flask(__name__)
 
@@ -40,7 +42,7 @@ def admin():
 		return render_template("cms.html")
 	
 	if request.method == 'POST':
-		return render_template("about.html")
+		return redirect('/about')
 		#with open("name.html", "wb") as fo:
 			#fo.write("<!DOCTYPE html>
 			#<html><head>
