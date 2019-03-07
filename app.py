@@ -43,15 +43,15 @@ def admin():
 		return render_template("cms.html")
 	
 	if request.method == 'POST':
-		if os.path.exists('static/test.txt') == False:
-			file = open("static/test.txt", "w")
+		if os.path.exists('test.txt') == False:
+			file = open("test.txt", "w")
 			file.write("test")
 			file.close()
 		return render_template("cms.html")
 		
 	if request.method == 'DELETE':
-		if os.path.exists('static/test.txt') == True:
-			os.remove("static/test.txt")
+		if os.path.exists('test.txt') == True:
+			os.remove("test.txt")
 		return render_template("cms.html")
 		
 		
